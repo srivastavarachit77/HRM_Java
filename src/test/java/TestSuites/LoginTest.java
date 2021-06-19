@@ -34,7 +34,7 @@ public class LoginTest extends Base {
 		wait.until(ExpectedConditions.elementToBeClickable(l.getLogoutButton()));
 		lAct.click(l.getLogoutButton()).build().perform();
 		System.out.println("Test1");
-		System.out.println("Test2");
+		
 		
 		
 	}
