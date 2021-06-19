@@ -23,6 +23,7 @@ public class LoginTest extends Base {
 	public void Login() throws IOException, InterruptedException
 	{
 		driver=InitializeBrowser();
+	
 		Login l=new Login(driver);
 		l.getUserName().sendKeys(CommonFunctions.getValue("username"));
 		l.getPassword().sendKeys(CommonFunctions.getValue("password"));
@@ -32,6 +33,8 @@ public class LoginTest extends Base {
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.elementToBeClickable(l.getLogoutButton()));
 		lAct.click(l.getLogoutButton()).build().perform();
+		System.out.println("Test1");
+		System.out.println("Test2");
 		
 		
 	}
